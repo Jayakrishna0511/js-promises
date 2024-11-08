@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b><ul style="color: blue; text-align: center;">please check the console</ul></b>
+    <script>
+        // ***********************************(Q1)***************************************************************//
+       let promise = new Promise((fullfilled,rejected)=>{
+        let num = 10;
+        if(num<=10){
+            fullfilled("num is <=10")
+        }else{
+            rejected("not correct")
+        }
+       })
+    //    console.log(promise);
+
+       promise.then((msg)=>{
+           console.log(msg);
+        }).catch((msg)=>{
+            console.log(msg);
+            
+        })
+
+// *************************************************(Q2)*********************************************************//
+// let promise = new Promise((resolved,rejected)=>{
+//     let name = prompt("enter your name:")
+//     let password = prompt("enter the password:")
+//     if(name=="jay"&& password=="jayakrishna@123"){
+//         resolved("login successfull")
+//     }else{
+//       rejected("invalid credentials")
+//     }
+// })
+
+// promise.then((Text)=>{
+//     console.log(Text);
+// }).catch((Text)=>{
+//     console.log(Text);
+    
+// })
+
+// ***************************************************(Q3)********************************************************//
+// let promise = new Promise((resolved,rejected)=>{
+//     let name = prompt("enter name");
+//     let password = prompt("enter password");
+//     function trying(name,password){
+//         if(name=="jay"&& password=="jayakrishna@123"){
+//         resolved("login successfull")
+//     }
+//  else{
+//       rejected("invalid credentials")
+//     }
+// }
+// trying(name,password)
+// })
+
+// promise.then((Text)=>{
+//     console.log(Text);
+// }).catch((Text)=>{
+//     console.log(Text);
+    
+// })
+
+    
+       
+       
+    </script>
+</body>
+</html>
